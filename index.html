@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/style.css">
+    <title>Taschen Rechner</title>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="./images/taschen-rechner.jpeg" id="logo" alt="Taschen rechner"></a>
+        <nav>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer">home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Info</a></li>
+            <li><a href="">Pages</a></li>
+
+            <li><a href="tel:+0176123456">contact</a></li>
+
+        </nav>
+    </header>
+    <!--wipe يمسح-->
+
+
+    <div id="container">
+
+        <section>
+
+
+            <div id="content">
+
+                <input type="text" id="input" placeholder="0">
+                <button class="display rech" onclick="main()">AC</button>
+                <button class="display rech" onclick="Delete()">C</button>
+                <button class="rech" onclick="display('%')">%</button>
+                <button class="rech" onclick="display('/')">/</button>
+
+
+                <button class="sombole" onclick="display('7')">7</button>
+                <button class="sombole" onclick="display('8')">8</button>
+                <button class="sombole" onclick="display('9')">9</button>
+                <button class="rech" onclick="display('*')">*</button>
+
+
+                <button class="sombole" onclick="display('4')">4</button>
+                <button class="sombole" onclick="display('5')">5</button>
+                <button class="sombole" onclick="display('6')">6</button>
+                <button class="rech" onclick="display('+')">+</button>
+
+                <button class="sombole" onclick="display('1')">1</button>
+                <button class="sombole" onclick="display('3')">3</button>
+                <button class="sombole" onclick="display('2')">2</button>
+                <button class="rech" onclick="display('-')">-</button>
+
+                <button class="num" class="sombole" onclick="display('0')">0</button>
+                <!-- <button class="display" onclick="display(',')">,</button> -->
+                <button class="sombole" onclick="display(',')">,</button>
+                <button class="calc rech" id="background" onclick="calc('=')">=</button>
+            </div>
+        </section>
+
+    </div>
+
+    <main>
+        <h1 id="headTow">Vorübergehen</h1>
+        <hr>
+        <p id="ParOne">Dieser Taschenrechner wurde bereits 2001 von Stefan Münz vorgestellt. Damals wurden die
+            Klickbuttons mit
+            onclick-Attributen versehen, um die Funktionalität zu ermöglichen. Um eine zeitgemäßere dynamische
+            Ereignisbehandlung
+            einzusetzen, wurde auf diese JavaScript-spezifischen Attribute verzichtet, um das Markup streng von der
+            JavaScript-Programmlogik zu trennen. Außerdem wurde eine Tastaturunterstützung implementiert, mit der die
+            Zahleneingabe
+            und die vier Grundrechenarten wie gewohnt bedienbar sind.</p>
+
+
+        <h2>HTML.</h2>
+        <hr>
+
+
+
+        <p id="ParTow">Anhand dieses Beispiels können Sie studieren, wie man Formulareingaben mit JavaScript zur
+            direkten
+            Interaktion verwenden
+            kann.</p>
+
+
+    </main>
+    <footer></footer>
+    <script defer src="main.js"></script>
+
+
+</body>
+
+</html>

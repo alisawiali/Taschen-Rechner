@@ -1,0 +1,33 @@
+body {
+  overflow: auto;
+}
+#container {
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  position: absolute;
+  top: 30%;
+}
+::placeholder {
+  color: #fff;
+  position: relative;
+  left: -30px;
+}
+
+@media (max-width: 500px) {
+  #content {
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,86 @@
+header {
+  width: 100%;
+  position: fixed;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background-color: #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+  position: fixed;
+  z-index: 3;
+}
+
+#logo {
+  width: 80px;
+  border-radius: 50%;
+  color: black;
+  font-size: 3rem;
+  text-decoration: none;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 10px 10px 20px #000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav li {
+  list-style: none;
+  padding: 0 1em;
+}
+nav a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 350;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+  padding: 0 1rem;
+}
+nav a::before {
+  content: "";
+  width: 0;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+nav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: right;
+  width: 100%;
+}
+nav a:active {
+  background-color: rgb(187, 187, 187);
+}
+// @Media
+@media (max-width: 600px) {
+  header {
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: rgb(212, 212, 212);
+    font-size: 1rem;
+  }
+  #logo {
+    font-size: 1.8rem;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,74 @@
+@use "./para/p.scss";
+@use "./input/input.scss";
+@use "./container/container.scss";
+@use "./head/head.scss";
+@use "./main/main.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.6;
+  background-color: #1a1a1a;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+#input {
+  grid-column: span 4;
+  background-color: red;
+  height: 130px;
+  font-size: 4rem;
+  border: none;
+  outline: none;
+  text-align: end;
+  border-radius: 3px;
+}
+button {
+  border: none;
+  outline: none;
+  transition: all 0.5s ease;
+  height: 100px;
+  width: 100px;
+  border-radius: 2px;
+  font-size: 2rem;
+  color: rgb(200, 10, 25);
+  font-size: 2.9rem;
+}
+
+// button:hover {
+//  background-color: rgb(223, 116, 116);
+// }
+button:active {
+  color: #0000;
+  background-color: rgb(223, 116, 116);
+}
+.sombole {
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 0px 0px 2px #000;
+}
+
+.num {
+  width: 100%;
+  grid-column: span 2;
+}
+
+.rech {
+  background-color: #f4eefa;
+}
+.rech:active {
+  background-color: #9a5ace;
+}
