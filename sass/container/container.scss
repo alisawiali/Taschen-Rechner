@@ -13,7 +13,7 @@ section {
 }
 #content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(min-content, 1fr));
   gap: 8px;
   position: absolute;
   top: 30%;
@@ -28,6 +28,6 @@ section {
   #content {
     width: 200px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20rem;
   }
 }

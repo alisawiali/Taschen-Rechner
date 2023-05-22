@@ -45,6 +45,6 @@ myElement.forEach((e, i) => {
 
 const myyrech = document.getElementById("background");
 myyrech.onclick = function () {
-  document.body.style.background = "green";
+  document.getElementById("container").style.background = "green";
   // document.getElementById("input").style.color = "green";
 };
