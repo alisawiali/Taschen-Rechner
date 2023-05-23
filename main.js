@@ -43,8 +43,25 @@ myElement.forEach((e, i) => {
   });
 });
 
-const myyrech = document.getElementById("background");
+const myyrech = document.querySelector(".calc");
 myyrech.onclick = function () {
-  document.getElementById("container").style.background = "green";
-  // document.getElementById("input").style.color = "green";
+  document.body.style.backgroundColor = "#cccc";
+};
+// Span scroll (------------)
+const span = document.querySelector(".span");
+window.onscroll = function () {
+  if (this.scrollY >= 400) {
+    span.classList.add("show");
+  } else {
+    span.classList.remove("show");
+  }
+  // this.scrollY >= 400
+  //   ? span.classList.add("show")
+  //   : span.classList.remove("show");
+};
+span.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 };

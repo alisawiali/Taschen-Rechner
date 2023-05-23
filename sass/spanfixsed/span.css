@@ -1,0 +1,15 @@
+.span {
+  position: fixed;
+  background-color: red;
+  font-size: 30px;
+  color: #fff;
+  padding: 5px;
+  bottom: 10px;
+  right: -50px;
+  border-radius: 20%;
+  transition: all 0.5s ease;
+}
+
+.span.show {
+  right: 30px;
+}/*# sourceMappingURL=span.css.map */

@@ -3,7 +3,7 @@ header {
   position: fixed;
   margin: 0 auto;
   padding: 0 1rem;
-  background-color: #ccc;
+  background-image: linear-gradient(rgb(233, 231, 231), rgba(255, 255, 255));
   border-bottom: 1px solid #ccc;
   display: flex;
   align-items: center;
@@ -50,7 +50,7 @@ nav a::before {
   content: "";
   width: 0;
   height: 20px;
-  background-color: #000;
+  background-image: linear-gradient(red, yellow);
   position: absolute;
   left: 0;
   bottom: -10px;
